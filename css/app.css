@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00dfa3;
+    border-radius: 8px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+    border-radius: 20px;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    color: var(--mainGreenColor);
+}
+:root {
+    --mainGreenColor: "#00dfa3"
+}
+body {
+    background-color: #282a36;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 20px 40px;
+}
+
+.container header h1.clock {
+    text-align: center;
+    font-size: 50px;
+    color: #00dfa3;
+    height: 80px;
+    line-height: 80px;
+    font-weight: 100;
+    padding: 50px 0;
+}
+
+.container header div {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.container header .inputText {
+    height: 40px;
+    width: 100%;
+    display: block;
+    border: 0;
+    box-sizing: border-box;
+    background: #00000038;
+    color: #00dfa3;
+    border-radius: 3px;
+    max-width: 550px;
+    padding: 5px;
+}
+
+.container header div button.addTask {
+    display: block;
+    margin-left: 20px;
+    background: #00000038;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: white;
+    height: 40px;
+    width: 74px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0;
+}
+
+.container header div button.addTask:hover {
+    background-color: var(--mainGreenColor);
+    background-color: #00dfa3;
+    color: #000;
+}
+
+.container header .inputText:focus-visible {
+    border: 1px solid;
+    border-color: var(--mainGreenColor);
+    outline: none;
+}
+
+/*  */
+.container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container ul li {
+    background: rgba(0, 0, 0, 0.22);
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    word-break: break-word;
+}
+
+.container ul li p {
+    flex-grow: 1;
+    width: 0;
+    height: 100%;
+    margin: 0 10px;
+}
+
+p input {
+    padding: 0 10px;
+    height: 26px;
+    width: 100%;
+    color: white;
+    line-height: 26px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid #111;
+    border-radius: 3px;
+    background: #282a36;
+    outline: none;
+}
+p input:focus-visible {
+    border: 1px solid #111;
+    border-radius: 3px;
+    background: #282a36
+}
+p input:disabled {
+    background: transparent;
+    border: 0;
+}
+
+
+
+.container ul li button:first-child  {
+    height: 26px;
+    border-radius: 100%;
+    width: 26px;
+    background: #282a36;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    font-size: 13px;
+}
+
+.container ul li button.active {
+    background-color: #00dfa3;
+}
+
+.delete,.edit {
+    font-size: 20px;
+    background: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    line-height: 26px;
+    margin: 0 6px;
+}
+
+.container main section p:first-child {
+    text-align: center;
+    font-size: 41px;
+    line-height: 40px;
+    color: #dae0ff;
+    padding: 15px 0;
+    font-weight: 800;
+    text-shadow: -1px 2px black;
+}
